@@ -1,0 +1,9 @@
+1) first error occures when we load data 
+twt = pd.read_json('Data Path.json')
+Ans -->> twt = pd.read_json('Data Path.json', lines = True)
+
+2) second error is regex true or false error this occurs in feature version 
+twt['text'] = twt['text'].str.replace('[^\w\s]','')
+Ans-->> twt['text'] = twt['text'].str.replace('[^\w\s]', '', regex=True)
+
+3) 3rd error is in emotion prediction the whole concept is wrong 
